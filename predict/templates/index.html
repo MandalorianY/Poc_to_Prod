@@ -1,0 +1,28 @@
+<html>
+
+<head></head>
+
+<body style="
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+      margin: 12% auto;
+      text-align: center;
+    ">
+  <h1>Poc To Prod</h1>
+  <p>
+    Enter a stack overflow topic and the number of predictions that you want and click Predict
+  </p>
+  <form method="POST">
+    <label for="model_input">Stack Overflow Topic:</label>
+    <input style="width: 25%;" type="text" name="model_input" required />
+
+    <label for="num_predictions">Number of Predictions:</label>
+    <input style="width: 5%;" type="number" name="num_predictions" required min="1" />
+
+    <input type="submit" value="Classify" />
+  </form>
+</body>
+
+</html>

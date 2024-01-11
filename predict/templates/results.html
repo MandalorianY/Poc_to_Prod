@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Prediction Results</title>
+    <style>
+        #prediction-list {
+            list-style-type: none;
+            padding: 0;
+            width: fit-content;
+            margin: auto;
+        }
+
+        #back-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body style="
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+      margin: 12% auto;
+      text-align: center;
+    ">
+    <h1>Prediction Results</h1>
+    <ul id="prediction-list">
+        {% for prediction in predictions %}
+        <li>{{ prediction }}</li>
+        {% endfor %}
+    </ul>
+    <button id="back-button" onclick="goBack()">Go Back</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
