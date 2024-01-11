@@ -13,19 +13,12 @@ The project is structured into three main directories:
 
 ## How to Run
 
-1. Install the required Python packages listed in [`requirements.txt`] using pip:
+Install the required Python packages listed in [`requirements.txt`] using pip:
 
 ```sh
 pip install -r requirements.txt
 ```
 
-2. Run the server:
-
-```python
-python predict/app.py
-```
-
-The server will start and you can navigate to `http://127.0.0.1:5000` to use the app.
 
 ## Testing
 
